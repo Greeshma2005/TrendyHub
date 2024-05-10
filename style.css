@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+#home{
+    height: auto;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #ccc;
+    height:80px;
+}
+.brand-logo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.brand-logo-container i{
+    color: black;
+    font-size: 50px;
+}  
+.brand-logo-container a {
+    text-decoration: none; 
+} 
+.brand-name{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 25px;
+    color: black;
+}
+.brand-name:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navbar a:hover{
+    color: red;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: red;
+}
+.main-home{
+    padding: 10% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/013/081/730/original/beautiful-woman-carrying-shopping-bag-silhouette-vector.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center; 
+}
+.main-text h5{
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.bag{
+    font-size: 50px;
+    color: black;
+    align-items: center;
+}
+.bag:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));  
+}
+.main-text p{
+    color: black;
+    font-size: 19px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));     
+}
+.arrow{
+    position: absolute;
+    top:85%;
+    right: 10%;
+}
+.down i{
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 5px 5px;
+}
+.down i:hover{
+    background-color: black;
+    color: white;
+    transition: all .42s ease;
+}
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+    transition: all.40s ease;
+}
+.row img{
+    width: 100%;
+    height: 400px;
+    transition: all.40s ease;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(24, 223, 24);
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: red;
+}
+.rating i{
+    color: orange;
+    font-size: 18px;
+}
+.price h4{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#services{
+    background-color: rgb(192, 189, 185);
+    height: auto;
+    padding:15px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap:3rem;
+}
+.image{
+    font-size: 75px;
+    width: 100px;
+    height: auto;
+}
+.contact-info h4{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s ease;
+}
+.contact-info p:hover{
+    color: red;
+}
+.social-icon{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s ease;
+}
+.social-icon i:hover{
+    transform: scale(1.5);
+}
+.copyright{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+.copyright p{
+    color: black;
+    text-transform: capitalize;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-info {
+    margin-bottom: 20px;
+}
+
+.modal-info img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.modal-product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-product-price {
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-controls {
+    margin-top: 20px;
+}
+
+#modalQuantity {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#addToCartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addToCartBtn:hover {
+    background-color: #0056b3;
+}
+@media(max-width:1599px) and (min-width:1240px)
+{
+    .main-home{
+        padding: 20px 5%;
+        background-size: 850px;
+    }
+    .main-text p{
+        font-size: 17px;
+        font-style: oblique;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:1240px) and (min-width:730px)
+{
+    header{
+        padding: 20px 0px;
+    }
+    .main-home{
+        padding: 20px 5%;
+        
+    }
+    .main-text p{
+        font-size: 12px;
+        font-style: oblique;
+        margin-bottom: 10px;
+    }
+    .bag{
+        font-size: 40px;
+        align-items: center;
+    }
+    .main-text h5{
+        font-size: 45px;
+    }
+    .navbar a{
+        font-size: 16px;
+        padding: 10px 6.5px;
+    }
+    .nav-icon i{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .main-home {
+        background-size: 450px;
+    }
+}
+
+@media(max-width:730px){
+header{
+    padding: 20px 0px;
+}
+#home{
+    height: 980px;
+}
+.main-home{
+    background-position:center 70%;
+    background-size: 50%;
+    padding-bottom: 250px;
+}
+.main-text{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.main-text p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.bag{
+    font-size: 25px;
+    text-align: center;
+}
+.main-text h5{
+    text-align: center;
+    font-size: 30px;
+}
+.main-btn {
+    display: block; 
+    text-align: center;
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin: 0 auto; 
+}
+.arrow{
+    position: absolute;
+    top:72%;
+    right:10%;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navbar a {
+    font-size: 12px;
+    padding: 10px 15px;
+    word-break: keep-all; 
+    text-align: center;
+    flex: 1 0 33.333%; 
+    max-width: 33.333%;
+    box-sizing: border-box;
+}
+.navbar a:nth-child(n+4) {
+    flex: 1 0 50%; 
+    max-width: 50%;
+}
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+.nav-icon a {
+    margin-bottom: 8px; 
+    padding: 0px 5px;
+}
+.nav-icon i{
+    margin-right: auto;
+    font-size: 13px;
+}
+.contact-info h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.contact-info p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#services{
+    height:auto;
+}
+}
